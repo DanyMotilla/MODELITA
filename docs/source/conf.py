@@ -37,11 +37,7 @@ html_theme_options = {
 }
 
 html_static_path = ['_static']
-
-# Add custom CSS for code blocks and other elements
-html_css_files = [
-    'custom.css',
-]
+html_css_files = ['custom.css']
 
 # docs/_static/custom.css
 :root {
@@ -54,7 +50,6 @@ html_css_files = [
     color: var(--code-foreground);
 }
 
-/* Style for inline code */
 code {
     background: var(--code-background);
     color: var(--code-foreground);
@@ -62,32 +57,8 @@ code {
     border-radius: 3px;
 }
 
-/* Style for code blocks */
 pre {
     background: var(--code-background) !important;
     border-radius: 6px;
     padding: 1em;
 }
-
-/* Rest of the documentation files remain the same as before... */
-# docs/index.rst
-MODELITA Documentation
-=====================
-
-Welcome to MODELITA's documentation. MODELITA is a Domain-Specific Language (DSL) for 3D modeling that integrates Racket, PostGIS, and Blender.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   installation
-   getting-started
-   commands
-   symbols
-   integration
-   api
-   examples
-   contributing
-   license
-
-[Previous content remains the same...]
