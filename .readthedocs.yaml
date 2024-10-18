@@ -19,7 +19,7 @@ formats:
 
 # Sphinx configuration
 sphinx:
-  configuration: docs/conf.py
+  configuration: docs/source/conf.py
   fail_on_warning: true
 
 # Python dependencies required to build the docs
