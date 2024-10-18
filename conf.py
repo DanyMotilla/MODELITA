@@ -5,6 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
+html_theme_path = [os.path.join(os.path.expanduser("~"), ".local/lib/python3.10/site-packages")]
 
 project = 'MODELITA'
 copyright = '2024, Daniel Motilla Monreal'
@@ -24,5 +26,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = 'sphinx_wagtail_theme'
 html_static_path = ['_static']
