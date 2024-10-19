@@ -6,12 +6,12 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MODELITA v0.2 Command Cheatsheet &mdash; MODELITA 0.2.0 documentation</title>
+  <title>MODELITA VERSION 0.2 &mdash; MODELITA 0.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
-      <script src="_static/documentation_options.js?v=938c9ccc"></script>
+      <script src="_static/documentation_options.js?v=10f1778b"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -41,16 +41,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MODELITA v0.2 Command Cheatsheet</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#movement-commands">Movement Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rotation-commands">Rotation Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#shape-editing">Shape Editing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#state-management">State Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#symbol-management">Symbol Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quick-copy-raw-commands">Quick Copy Raw Commands</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MODELITA VERSION 0.2</a></li>
 </ul>
 
         </div>
@@ -67,7 +58,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">MODELITA v0.2 Command Cheatsheet</li>
+      <li class="breadcrumb-item active">MODELITA VERSION 0.2</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/README.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,74 +68,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="modelita-v0-2-command-cheatsheet">
-<h1>MODELITA v0.2 Command Cheatsheet<a class="headerlink" href="#modelita-v0-2-command-cheatsheet" title="Link to this heading">¶</a></h1>
-<section id="movement-commands">
-<h2>Movement Commands<a class="headerlink" href="#movement-commands" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">up</span>      <span class="o">-</span> <span class="n">Move</span> <span class="n">up</span>
-<span class="n">down</span>    <span class="o">-</span> <span class="n">Move</span> <span class="n">down</span>
-<span class="n">left</span>    <span class="o">-</span> <span class="n">Move</span> <span class="n">left</span>
-<span class="n">right</span>   <span class="o">-</span> <span class="n">Move</span> <span class="n">right</span>
-<span class="n">forward</span> <span class="o">-</span> <span class="n">Move</span> <span class="n">forward</span>
-<span class="n">backward</span> <span class="o">-</span> <span class="n">Move</span> <span class="n">backward</span>
-</pre></div>
-</div>
-</section>
-<section id="rotation-commands">
-<h2>Rotation Commands<a class="headerlink" href="#rotation-commands" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rotate-x+  - Rotate +90° X-axis
-rotate-x-  - Rotate -90° X-axis
-rotate-y+  - Rotate +90° Y-axis
-rotate-y-  - Rotate -90° Y-axis
-rotate-z+  - Rotate +90° Z-axis
-rotate-z-  - Rotate -90° Z-axis
-</pre></div>
-</div>
-</section>
-<section id="shape-editing">
-<h2>Shape Editing<a class="headerlink" href="#shape-editing" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span>      <span class="o">-</span> <span class="n">Add</span> <span class="n">vertex</span> <span class="n">at</span> <span class="n">current</span> <span class="n">position</span>
-<span class="n">b</span>      <span class="o">-</span> <span class="n">Clear</span> <span class="n">shape</span>
-<span class="n">select</span> <span class="o">-</span> <span class="n">Print</span> <span class="n">current</span> <span class="n">position</span>
-<span class="n">start</span>  <span class="o">-</span> <span class="n">Save</span> <span class="n">shape</span> <span class="n">to</span> <span class="n">OBJ</span> <span class="n">file</span>
-</pre></div>
-</div>
-</section>
-<section id="state-management">
-<h2>State Management<a class="headerlink" href="#state-management" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">push</span>   <span class="o">-</span> <span class="n">Save</span> <span class="n">position</span><span class="o">/</span><span class="n">rotation</span>
-<span class="n">pop</span>    <span class="o">-</span> <span class="n">Restore</span> <span class="n">position</span><span class="o">/</span><span class="n">rotation</span>
-</pre></div>
-</div>
-</section>
-<section id="symbol-management">
-<h2>Symbol Management<a class="headerlink" href="#symbol-management" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">define</span> <span class="o">-</span> <span class="n">Create</span> <span class="n">new</span> <span class="n">symbol</span>
-<span class="n">save</span>   <span class="o">-</span> <span class="n">Save</span> <span class="n">symbol</span> <span class="k">for</span> <span class="n">later</span>
-<span class="n">load</span>   <span class="o">-</span> <span class="n">Load</span> <span class="n">saved</span> <span class="n">symbol</span>
-</pre></div>
-</div>
-</section>
-<section id="example-usage">
-<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">define</span>
-<span class="n">my</span><span class="o">-</span><span class="n">symbol</span>
-<span class="p">(</span><span class="n">up</span> <span class="n">right</span> <span class="n">forward</span><span class="p">)</span>
-
-<span class="n">save</span>
-<span class="n">my</span><span class="o">-</span><span class="n">symbol</span>
-
-<span class="n">load</span>
-<span class="n">my</span><span class="o">-</span><span class="n">symbol</span>
-</pre></div>
-</div>
-</section>
-<section id="quick-copy-raw-commands">
-<h2>Quick Copy Raw Commands<a class="headerlink" href="#quick-copy-raw-commands" title="Link to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">up</span> <span class="n">down</span> <span class="n">left</span> <span class="n">right</span> <span class="n">forward</span> <span class="n">backward</span> <span class="n">rotate</span><span class="o">-</span><span class="n">x</span><span class="o">+</span> <span class="n">rotate</span><span class="o">-</span><span class="n">x</span><span class="o">-</span> <span class="n">rotate</span><span class="o">-</span><span class="n">y</span><span class="o">+</span> <span class="n">rotate</span><span class="o">-</span><span class="n">y</span><span class="o">-</span> <span class="n">rotate</span><span class="o">-</span><span class="n">z</span><span class="o">+</span> <span class="n">rotate</span><span class="o">-</span><span class="n">z</span><span class="o">-</span> <span class="n">a</span> <span class="n">b</span> <span class="n">select</span> <span class="n">start</span> <span class="n">push</span> <span class="n">pop</span> <span class="n">define</span> <span class="n">save</span> <span class="n">load</span>
-</pre></div>
-</div>
-</section>
+  <section id="modelita-version-0-2">
+<h1>MODELITA VERSION 0.2<a class="headerlink" href="#modelita-version-0-2" title="Link to this heading">¶</a></h1>
+<p>Welcome to Modelita! Installation is quick and easy with a shell script (.sh). For all the resources you need, visit the [official website](<a class="reference external" href="https://modelita.bearblog.dev/">https://modelita.bearblog.dev/</a>)</p>
+<p>This project is dedicated to my loyal dog, who exemplified courage and pride, living life to the fullest even after losing his vision. His spirit inspires Modelita, reminding us that true exploration often involves uncertainty.</p>
+<p>Note: This version has only been tested on Ubuntu-based distributions.</p>
+<p>૮ • ﻌ - ა</p>
 </section>
 
 

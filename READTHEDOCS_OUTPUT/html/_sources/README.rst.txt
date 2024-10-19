@@ -1,68 +1,10 @@
-MODELITA v0.2 Command Cheatsheet
-================================
+MODELITA VERSION 0.2
+=======================================
 
-Movement Commands
-----------------
-::
+Welcome to Modelita! Installation is quick and easy with a shell script (.sh). For all the resources you need, visit the [official website](https://modelita.bearblog.dev/)
 
-    up      - Move up
-    down    - Move down
-    left    - Move left
-    right   - Move right
-    forward - Move forward
-    backward - Move backward
+This project is dedicated to my loyal dog, who exemplified courage and pride, living life to the fullest even after losing his vision. His spirit inspires Modelita, reminding us that true exploration often involves uncertainty.
 
-Rotation Commands
-----------------
-::
+Note: This version has only been tested on Ubuntu-based distributions.
 
-    rotate-x+  - Rotate +90° X-axis
-    rotate-x-  - Rotate -90° X-axis
-    rotate-y+  - Rotate +90° Y-axis
-    rotate-y-  - Rotate -90° Y-axis
-    rotate-z+  - Rotate +90° Z-axis
-    rotate-z-  - Rotate -90° Z-axis
-
-Shape Editing
--------------
-::
-
-    a      - Add vertex at current position
-    b      - Clear shape
-    select - Print current position
-    start  - Save shape to OBJ file
-
-State Management
----------------
-::
-
-    push   - Save position/rotation
-    pop    - Restore position/rotation
-
-Symbol Management
-----------------
-::
-
-    define - Create new symbol
-    save   - Save symbol for later
-    load   - Load saved symbol
-
-Example Usage
-------------
-::
-
-    define
-    my-symbol
-    (up right forward)
-
-    save
-    my-symbol
-
-    load
-    my-symbol
-
-Quick Copy Raw Commands
-----------------------
-::
-
-    up down left right forward backward rotate-x+ rotate-x- rotate-y+ rotate-y- rotate-z+ rotate-z- a b select start push pop define save load
+૮ • ﻌ - ა
