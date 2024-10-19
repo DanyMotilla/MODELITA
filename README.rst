@@ -1,5 +1,4 @@
-MODELITA VERSION 0.2
-=======================================
+# MODELITA v0.2 Documentation
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -36,14 +35,12 @@ Here are the commands you can use to manipulate the 3D model:
   
 - **Rotation Commands**:
 
-| Command       | Description                                         |
-|---------------|-----------------------------------------------------|
-| `rotate-x+`  | Rotate 90 degrees around the X-axis (positive)    |
-| `rotate-x-`  | Rotate 90 degrees around the X-axis (negative)    |
-| `rotate-y+`  | Rotate 90 degrees around the Y-axis (positive)    |
-| `rotate-y-`  | Rotate 90 degrees around the Y-axis (negative)    |
-| `rotate-z+`  | Rotate 90 degrees around the Z-axis (positive)    |
-| `rotate-z-`  | Rotate 90 degrees around the Z-axis (negative)    |
+ `rotate-x+`  Rotate 90 degrees around the X-axis (positive)
+ `rotate-x-`  Rotate 90 degrees around the X-axis (negative)
+ `rotate-y+`  Rotate 90 degrees around the Y-axis (positive)
+ `rotate-y-`  Rotate 90 degrees around the Y-axis (negative)
+ `rotate-z+`  Rotate 90 degrees around the Z-axis (positive)
+ `rotate-z-`  Rotate 90 degrees around the Z-axis (negative)
 
 - **Shape Editing**:
   - `a`: Add the current position as a vertex
@@ -122,5 +119,4 @@ The `objimporter.py` script imports OBJ files and cleans up the Blender scene be
 - **Automatic Directory Scan**: Looks for `.obj` files in the specified directory (`models/`).
 - **Debug Information**: Displays details about the import process and any errors that occur.
 
----
 If you fail to follow these steps, well... you might just be a bit tonto! ૮ • ﻌ - ა
