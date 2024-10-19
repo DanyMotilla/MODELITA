@@ -90,7 +90,7 @@ Shape Editing Commands
 +---------+----------------------------------------+
 | select  | Print the current cursor position      |
 +---------+----------------------------------------+
-| start   | Save the shape to an OBJ file         |
+| start   | Save the shape to an OBJ file          |
 +---------+----------------------------------------+
 
 State Management Commands
