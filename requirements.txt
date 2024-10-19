@@ -1,2 +1,2 @@
 sphinx
-sphinx-wagtail-theme
+sphinx_wagtail_theme

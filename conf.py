@@ -27,4 +27,4 @@ exclude_patterns = ['Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_wagtail_theme'
-html_static_path = ['/READTHEDOCS_OUTPUT/html/_static']
+html_static_path = []
