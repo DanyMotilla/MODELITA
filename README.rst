@@ -1,10 +1,3 @@
-MODELITA VERSION 0.2
-=====================
-
-.. contents:: Table of Contents
-   :local:
-   :depth: 2
-
 1. Introduction
 2. Prerequisites
 3. Installation
