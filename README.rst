@@ -9,7 +9,7 @@ Table of Contents
 3. `Installation`_
 4. `Using Modelita`_
 5. `Command Reference`_
-6. `Symbol Management`_
+6. `Symbols`_
 7. `Blender Integration`_
 
 Introduction
