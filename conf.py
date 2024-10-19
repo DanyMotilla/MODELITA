@@ -12,7 +12,7 @@ html_theme_path = [os.path.join(os.path.expanduser("~"), ".local/lib/python3.10/
 project = 'MODELITA'
 copyright = '2024, Daniel Motilla Monreal'
 author = 'Daniel Motilla Monreal'
-release = '0.2'
+release = '0.2.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
