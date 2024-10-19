@@ -15,12 +15,16 @@ Introduction
 
 MODELITA is a Domain-Specific Language (DSL) for 3D modeling, integrating Racket, PostGIS, and Blender. This documentation covers version 0.2.
 
+.. _prerequisites:
+
 Prerequisites
 -------------
 
 Before setting up MODELITA, ensure you have the following installed:
 
 1. **Blender**: Latest version from the `official Blender website <https://www.blender.org/>`_.
+
+.. _installation:
 
 Installation
 ------------
@@ -33,7 +37,9 @@ Running Modelita
 
 Once you installed MODELITA, you can run the program using DRRacket. When you start ``modelita.rkt``, you will enter an interactive mode where you can input commands to create 3D shapes.
 
-Basic Commands
+.. _using-modelita:
+
+Using Modelita
 ~~~~~~~~~~~~~~
 
 Here are the commands you can use to manipulate the 3D model:
@@ -69,49 +75,7 @@ Here are the commands you can use to manipulate the 3D model:
   - ``push``: Save the current position and rotation for later retrieval.
   - ``pop``: Restore the last saved position and rotation.
 
-Defining and Saving Symbols
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can define custom symbols (commands) to automate actions:
-
-1. **Define a symbol**:
-
-   ::
-
-     define
-     Enter new symbol name: my-symbol
-     Enter commands (as list): (up right forward)
-
-2. **Save the symbol**:
-
-   Use the ``save`` command to store your symbol for later use::
-
-     save
-     Enter symbol name to save: my-symbol
-
-3. **Load a saved symbol**:
-
-   ::
-
-     load
-     Enter symbol filename to load: my-symbol
-
-4. **Calling a saved symbol**:
-
-   After defining a symbol, you can call it by simply entering its name::
-
-     my-symbol
-
-5. **Start the process**:
-
-   Use the ``start`` command to save the shape as an ``.obj`` file::
-
-     start
-     Shape saved to output.obj
-
-The ``start`` command is used specifically to save your current shape design to an ``.obj`` file, while the ``save`` command is for saving the defined symbols themselves. This distinction is important for effective use of Modelita.
-
-.. _using-modelita:
+.. _using-blender-obj-importer:
 
 Using the Blender OBJ Importer (``objimporter.py``)
 ---------------------------------------------------
