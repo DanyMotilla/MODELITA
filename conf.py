@@ -12,6 +12,7 @@ html_theme_path = [os.path.join(os.path.expanduser("~"), ".local/lib/python3.10/
 project = 'MODELITA'
 copyright = '2024, Daniel Motilla Monreal'
 author = 'Daniel Motilla Monreal'
+version = '0.2'  # Update to the appropriate version number
 release = '0.2.0'
 
 # -- General configuration ---------------------------------------------------
