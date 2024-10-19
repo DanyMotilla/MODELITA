@@ -113,8 +113,7 @@ Steps to Use the Importer
    - Press **Run Script**.
 
 4. Reload OBJ Files:
-   After running the script, navigate to the 3D View, press **N** to open the side panel, and go to the **My Tools** tab.
-   Click **Reload OBJ** to import all `.obj` files from the specified directory.
+   After running the script, navigate to the 3D View, press **N** to open the side panel, and go to the **My Tools** tab. Click **Reload OBJ** to import all `.obj` files from the specified directory.
 
 Script Overview
 ---------------
