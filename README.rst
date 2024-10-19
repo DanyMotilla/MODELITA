@@ -1,4 +1,5 @@
-# MODELITA v0.2 Documentation
+MODELITA VERSION 0.2
+=======================================
 
 ## Table of Contents
 1. [Introduction](#introduction)
