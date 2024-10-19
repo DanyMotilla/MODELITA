@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  modelita:
+    build: .
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./models:/app/modelita/models
+      - ./symbols:/app/modelita/symbols
+      - ./blender:/app/modelita/blender
+    environment:
+      - POSTGRES_PASSWORD=modelita123
+      - POSTGRES_HOST_AUTH_METHOD=trust

@@ -1,0 +1,10 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# Generated files
+models/*.obj
+
+# Local environment
+.env
