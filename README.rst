@@ -75,7 +75,7 @@ Here are the commands you can use to manipulate the 3D model:
   - ``push``: Save the current position and rotation for later retrieval.
   - ``pop``: Restore the last saved position and rotation.
 
-.. _using-blender-obj-importer:
+.. _using-the-blender-obj-importer:
 
 Using the Blender OBJ Importer (``objimporter.py``)
 ---------------------------------------------------
