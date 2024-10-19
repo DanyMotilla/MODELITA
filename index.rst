@@ -6,9 +6,7 @@
 MODELITA documentation
 ======================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+WELCOME! If you fail to follow these steps, well... you might just be a bit tonto! ૮ • ﻌ - ა
 
 
 .. toctree::
