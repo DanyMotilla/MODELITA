@@ -43,21 +43,21 @@ Here are the commands you can use to manipulate the 3D model:
 
 - **Rotation Commands**:
 
-  +----------------+---------------------------------------------+
-  | Command        | Description                                 |
-  +================+=============================================+
-  | ``rotate-x+``  | Rotate 90 degrees around the X-axis (positive) |
-  +----------------+---------------------------------------------+
-  | ``rotate-x-``  | Rotate 90 degrees around the X-axis (negative) |
-  +----------------+---------------------------------------------+
-  | ``rotate-y+``  | Rotate 90 degrees around the Y-axis (positive) |
-  +----------------+---------------------------------------------+
-  | ``rotate-y-``  | Rotate 90 degrees around the Y-axis (negative) |
-  +----------------+---------------------------------------------+
-  | ``rotate-z+``  | Rotate 90 degrees around the Z-axis (positive) |
-  +----------------+---------------------------------------------+
-  | ``rotate-z-``  | Rotate 90 degrees around the Z-axis (negative) |
-  +----------------+---------------------------------------------+
+  +----------------+-----------------------------------------------+
+  | Command        | Description                                   |
+  +================+===============================================+
+  | ``rotate-x+``  | Rotate 90 degrees around the X-axis (positive)|
+  +----------------+-----------------------------------------------+
+  | ``rotate-x-``  | Rotate 90 degrees around the X-axis (negative)|
+  +----------------+-----------------------------------------------+
+  | ``rotate-y+``  | Rotate 90 degrees around the Y-axis (positive)|
+  +----------------+-----------------------------------------------+
+  | ``rotate-y-``  | Rotate 90 degrees around the Y-axis (negative)|
+  +----------------+-----------------------------------------------+
+  | ``rotate-z+``  | Rotate 90 degrees around the Z-axis (positive)|
+  +----------------+-----------------------------------------------+
+  | ``rotate-z-``  | Rotate 90 degrees around the Z-axis (negative)|
+  +----------------+-----------------------------------------------+
 
 - **Shape Editing**:
   - ``a``: Add the current position as a vertex
@@ -110,6 +110,8 @@ You can define custom symbols (commands) to automate actions:
      Shape saved to output.obj
 
 The ``start`` command is used specifically to save your current shape design to an ``.obj`` file, while the ``save`` command is for saving the defined symbols themselves. This distinction is important for effective use of Modelita.
+
+.. _using-modelita:
 
 Using the Blender OBJ Importer (``objimporter.py``)
 ---------------------------------------------------
