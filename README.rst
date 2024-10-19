@@ -1,8 +1,8 @@
 MODELITA v0.2 Documentation
-===========================
+==========================
 
 Table of Contents
------------------
+----------------
 
 1. `Introduction`_
 2. `Prerequisites`_
@@ -13,19 +13,19 @@ Table of Contents
 7. `Blender Integration`_
 
 Introduction
-------------
+-----------
 
 MODELITA is a Domain-Specific Language (DSL) for 3D modeling, integrating Racket, PostGIS, and Blender. This documentation covers version 0.2.
 
 Prerequisites
--------------
+------------
 
 Before setting up MODELITA, ensure you have the following installed:
 
 1. **Blender**: Latest version from the `official Blender website <https://www.blender.org/>`_.
 
 Installation
-------------
+-----------
 
 1. Download the installer:
    `install-modelita.sh <https://github.com/DanyMotilla/MODELITA/releases/download/GIS/install-modelita.sh>`_
@@ -33,15 +33,15 @@ Installation
 2. Run the installer script.
 
 Using Modelita
---------------
+-------------
 
 Once you have installed MODELITA, you can run the program using DrRacket. When you start ``modelita.rkt``, you will enter an interactive mode where you can input commands to create 3D shapes.
 
 Command Reference
-----------------
+---------------
 
 Movement Commands
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 +------------+--------------------------------+
 | Command    | Description                    |
@@ -60,54 +60,54 @@ Movement Commands
 +------------+--------------------------------+
 
 Rotation Commands
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
-+------------+---------------------------------------------+
-| Command    | Description                                 |
-+============+=============================================+
-| rotate-x+  | Rotate 90 degrees around the X-axis (+)    |
-+------------+---------------------------------------------+
-| rotate-x-  | Rotate 90 degrees around the X-axis (-)    |
-+------------+---------------------------------------------+
-| rotate-y+  | Rotate 90 degrees around the Y-axis (+)    |
-+------------+---------------------------------------------+
-| rotate-y-  | Rotate 90 degrees around the Y-axis (-)    |
-+------------+---------------------------------------------+
-| rotate-z+  | Rotate 90 degrees around the Z-axis (+)    |
-+------------+---------------------------------------------+
-| rotate-z-  | Rotate 90 degrees around the Z-axis (-)    |
-+------------+---------------------------------------------+
++------------+-----------------------------------------+
+| Command    | Description                             |
++============+=========================================+
+| rotate-x+  | Rotate 90 degrees around X-axis (+)     |
++------------+-----------------------------------------+
+| rotate-x-  | Rotate 90 degrees around X-axis (-)     |
++------------+-----------------------------------------+
+| rotate-y+  | Rotate 90 degrees around Y-axis (+)     |
++------------+-----------------------------------------+
+| rotate-y-  | Rotate 90 degrees around Y-axis (-)     |
++------------+-----------------------------------------+
+| rotate-z+  | Rotate 90 degrees around Z-axis (+)     |
++------------+-----------------------------------------+
+| rotate-z-  | Rotate 90 degrees around Z-axis (-)     |
++------------+-----------------------------------------+
 
 Shape Editing Commands
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
-+------------+---------------------------------------------+
-| Command    | Description                                 |
-+============+=============================================+
-| a          | Add the current position as a vertex       |
-+------------+---------------------------------------------+
-| b          | Clear the current shape                    |
-+------------+---------------------------------------------+
-| select     | Print the current cursor position          |
-+------------+---------------------------------------------+
-| start      | Save the shape to an OBJ file             |
-+------------+---------------------------------------------+
++------------+-----------------------------------------+
+| Command    | Description                             |
++============+=========================================+
+| a          | Add the current position as a vertex    |
++------------+-----------------------------------------+
+| b          | Clear the current shape                 |
++------------+-----------------------------------------+
+| select     | Print the current cursor position       |
++------------+-----------------------------------------+
+| start      | Save the shape to an OBJ file          |
++------------+-----------------------------------------+
 
 State Management Commands
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
-+------------+---------------------------------------------+
-| Command    | Description                                 |
-+============+=============================================+
-| push       | Save current position and rotation         |
-+------------+---------------------------------------------+
-| pop        | Restore last saved position and rotation   |
-+------------+---------------------------------------------+
++------------+-----------------------------------------+
+| Command    | Description                             |
++============+=========================================+
+| push       | Save current position and rotation      |
++------------+-----------------------------------------+
+| pop        | Restore last saved position/rotation    |
++------------+-----------------------------------------+
 
 Symbol Management
-----------------
+---------------
 
-Modelita allows you to define and save custom symbols (commands) to automate actions:
+Modelita allows you to define and save custom symbols (commands) to automate actions.
 
 Define a Symbol
 ~~~~~~~~~~~~~~
@@ -119,15 +119,15 @@ To define a new symbol::
     Enter commands (as list): (up right forward)
 
 Symbol Management Commands
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-+------------+---------------------------------------------+
-| Command    | Description                                 |
-+============+=============================================+
-| save       | Save a symbol for later use                |
-+------------+---------------------------------------------+
-| load       | Load a previously saved symbol             |
-+------------+---------------------------------------------+
++------------+-----------------------------------------+
+| Command    | Description                             |
++============+=========================================+
+| save       | Save a symbol for later use             |
++------------+-----------------------------------------+
+| load       | Load a previously saved symbol          |
++------------+-----------------------------------------+
 
 Example Usage::
 
@@ -143,7 +143,7 @@ Example Usage::
     my-symbol
 
 Blender Integration
-------------------
+-----------------
 
 Using the Blender OBJ Importer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -167,17 +167,17 @@ Setup Steps:
    - Click **Reload OBJ** to import all files
 
 Importer Features
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
-+-------------------+---------------------------------------------+
-| Feature           | Description                                 |
-+===================+=============================================+
-| Auto Cleanup      | Removes previous objects before import      |
-+-------------------+---------------------------------------------+
-| Directory Scan    | Automatically finds OBJ files in models/    |
-+-------------------+---------------------------------------------+
-| Debug Info        | Shows import process details and errors     |
-+-------------------+---------------------------------------------+
++-------------------+-----------------------------------------+
+| Feature           | Description                             |
++===================+=========================================+
+| Auto Cleanup      | Removes previous objects before import  |
++-------------------+-----------------------------------------+
+| Directory Scan    | Automatically finds OBJ files           |
++-------------------+-----------------------------------------+
+| Debug Info        | Shows import process details/errors     |
++-------------------+-----------------------------------------+
 
 .. note::
    The ``start`` command saves your shape design to an OBJ file, while the ``save`` command stores defined symbols. Keep this distinction in mind for effective use of Modelita.
